@@ -1,10 +1,11 @@
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,19 +26,19 @@
 
             <ul class="hidden md:flex space-x-10 text-textcolor items-center font-bold text-sm uppercase">
                 <li class=" hover:bg-primarycolor px-4 py-2 rounded-md ">
-                    <a href="">Homepage</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li class=" hover:bg-primarycolor px-4 py-2 rounded-md">
-                    <a href="">About me</a>
+                    <a href="#aboutmesection">About me</a>
                 </li>
                 <li class=" hover:bg-primarycolor px-4 py-2 rounded-md">
-                    <a href="">Services</a>
+                    <a href="#expertisesection">Services</a>
                 </li>
                 <li class=" hover:bg-primarycolor px-4 py-2 rounded-md">
-                    <a href="">Portfolio</a>
+                    <a href="#portfoliosection">Portfolio</a>
                 </li>
                 <li class=" hover:bg-primarycolor px-4 py-2 rounded-md">
-                    <a href="">Contact</a>
+                    <a href="#contactsection">Contact</a>
                 </li>
             </ul>
             <div class="hidden md:block">
@@ -70,14 +71,14 @@
 
     <!-- Intro Section -->
 
-    <div class=" bg-introcolor relative">
+    <div class=" bg-introcolor relative" id="home">
 
         <div class="container mx-auto text-center lg:flex justify-between items-center lg:text-start">
 
             <div class="space-y-4">
                 <div class="flex items-center gap-2 justify-center lg:justify-start">
                     <h1 class="text-3xl text-textcolor font-thin ">Hello mate</h1>
-                    <img class="w-8 h-8" src="./img/pngwing.com - 2024-06-04T132119.953.png" alt="">
+                    <img class="w-8 h-8 animate-pulse" src="./img/pngwing.com - 2024-06-04T132119.953.png" alt="">
                 </div>
                 <h2 class="text-3xl text-textcolor font-black lg:text-5xl ">I'm Taiwo Abidemi Olamide</h2>
                 <!-- <p class="text-textcolor">This is an example: <span class="example-selector"></span></p> -->
@@ -85,20 +86,29 @@
                         Developer</span></h1>
                 <p class="text-textcolor text-base font-light lg:text-xl">I am Taiwo Abidemi Olamide a freelance web
                     designer from Lagos-Nigeria, I help brands turn ideas into high quality products</p>
-                <button class="bg-primarycolor px-4 py-3 text-textcolor rounded-full text-sm"> <a
-                        href="tel:8100275274">Check Portfolio</a> <i class="fa-solid fa-chevron-right"></i></button>
+                <button
+                    class="bg-primarycolor px-4 py-3 text-textcolor rounded-full text-sm hover:bg-introcolor hover:text-primarycolor hover:border solid border-primarycolor animate-bounce">
+                    <a href="#portfoliosection">Check Portfolio</a> <i class="fa-solid fa-chevron-right"></i></button>
 
             </div>
 
-            <img class="w-4/5 ml-5 lg:w-2/5 mr-8 z-20" src="./img/myimage.png" alt="">
+            <img class="w-4/5 ml-5 lg:w-2/5 mr-8 z-20 " src="./img/myimage.png" alt="">
         </div>
     </div>
 
     <!-- Intro Section -->
 
+    <!-- Slideshow -->
+    <div class="bg-primarycolor h-24">
+
+        <marquee behavior="" direction="left" scrollamount="10" class="text-8xl text-textcolor font-bold">Product
+            Design* Web Development * UI/UX Design * Fullstack Development * Digital Marketing</marquee>
+
+    </div>
+
     <!-- About Section -->
-    <div class="py-24 lg:py-40">
-        <div class="container mx-auto flex justify-between gap-10 space-y-10 items-center px-10">
+    <div class="py-24 lg:py-40" id="aboutmesection">
+        <div class="container mx-auto flex justify-between gap-10 space-y-10 items-center px-10 animate-fadeIn">
             <img class="hidden lg:w-3/6 h-3/6 lg:flex" src="./img/sectionimage.png" alt="">
             <div class="space-y-4">
                 <h2 class="text-3xl text-primarycolor font-black">About Me</h2>
@@ -138,12 +148,13 @@
 
     <!-- skill sets -->
     <div class="py-24 lg:py-40 bg-introcolor px-10">
-        <div class="container mx-auto lg:flex lg:justify-between gap-10 ">
+        <div class="container mx-auto lg:flex lg:justify-between gap-10 animate-fadeIn">
             <div class="space-y-4 lg:w-2/4">
                 <h2 class="text-3xl text-primarycolor font-bold">Skill Sets</h2>
                 <h1 class="text-textcolor text-2xl font-bold">Creative and Professional Skills Experience on Few
                     Area</h1>
-                <p class="text-textcolor leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor deserunt,
+                <p class="text-textcolor leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor
+                    deserunt,
                     soluta unde nobis optio inventore necessitatibus. Dicta temporibus quos quisquam minus eligendi in
                     autem natus ipsum deserunt voluptatem, esse tenetur accusantium rem magnam! Nobis eligendi
                     distinctio fugiat harum labore quia quidem aliquid accusantium nostrum, ducimus ad, perspiciatis
@@ -152,8 +163,9 @@
                     assumenda, veritatis labore, nobis quia rem, suscipit doloribus eveniet. Recusandae esse quia
                     veritatis exercitationem sit et libero, provident voluptas corporis reiciendis quibusdam sapiente.
                 </p>
-                <button class="bg-primarycolor px-4 py-3 text-textcolor rounded-full text-sm"> <a
-                        href="tel:8100275274">Get any project</a> <i class="fa-solid fa-chevron-right"></i></button>
+                <button
+                    class="bg-primarycolor px-4 py-3 text-textcolor rounded-full text-sm hover:bg-introcolor hover:text-primarycolor hover:border solid border-primarycolor animate-bounce">
+                    <a href="tel:8100275274">Get any project</a> <i class="fa-solid fa-chevron-right"></i></button>
             </div>
             <div class="gap-10 mt-10 lg:space-y-4 lg:w-2/4">
                 <ul class="list-none space-y-6 my-auto">
@@ -192,19 +204,21 @@
     <!-- skill sets -->
 
     <!-- My Expertise -->
-    <div class="py-24 lg:py-40">
-        <div class="container mx-auto p-4">
+    <div class="py-24 lg:py-40" id="expertisesection">
+        <div class="container mx-auto p-4 ">
             <h2 class="text-2xl font-medium text-primarycolor text-center">My Expertise</h2>
             <p class="text-2xl text-textcolor text-center font-bold">Awesome Services For You</p>
-            
-            <div class=" lg:flex lg:justify-between mt-10">
+
+            <div class=" md:flex md:justify-between mt-10">
 
                 <div class="lg:w-1/3">
                     <div class="bg-white p-14 m-6  rounded-lg bg-introcolor shadow-lg shadow-primarycolor">
                         <i class="fa-solid fa-code text-4xl text-primarycolor mb-4"></i>
                         <h3 class="text-xl font-bold text-textcolor">Web Development</h3>
-                        <p class="text-sm text-textcolor leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        <p class="text-sm text-textcolor leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
@@ -213,7 +227,8 @@
                     <div class="bg-white p-14 m-6 rounded-lg shadow-lg shadow-primarycolor bg-introcolor">
                         <i class="fa-solid fa-paintbrush text-4xl text-primarycolor mb-4"></i>
                         <h3 class="text-xl font-bold text-textcolor">UI/UX Design</h 3>
-                            <p class="text-sm text-textcolor leading-6 font-thin">Lorem ipsum dolor sit amet, consectetur
+                            <p class="text-sm text-textcolor leading-6 font-thin">Lorem ipsum dolor sit amet,
+                                consectetur
                                 adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore
                                 magna aliqua. Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore
@@ -237,16 +252,80 @@
 
         </div>
     </div>
-
-
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
     <!-- My Expertise -->
 
+    <!-- My Portfolio -->
+    <div class="py-24 lg:py-40 bg-introcolor" id="portfoliosection">
+        <div class="container mx-auto p-4">
+            <h2 class="text-2xl font-medium text-primarycolor text-center">My Portfolio
+            </h2>
+            <p class="text-2xl font-bold text-textcolor text-center">Here are some of my recent projects
+            </p>
+            <div class="flex flex-wrap justify-center mt-10">
+                <div class="lg:w-1/3 xl:w-1/4 p-4
+                    hover:shadow-lg hover:shadow-primarycolor transition duration-300 bg-blend-overlay">
+                    <img src="./img/CAVALLI GROUP.png" alt="project1" class="rounded-lg">
+                </div>
 
+                <div class="lg:w-1/3 xl:w-1/4 p-4
+                hover:shadow-lg hover:shadow-primarycolor transition duration-300">
+                    <img src="./img/CAVALLI GROUP.png" alt="project1" class="rounded-lg">
+                </div>
+
+                <div class="lg:w-1/3 xl:w-1/4 p-4
+                hover:shadow-lg hover:shadow-primarycolor transition duration-300">
+                    <img src="./img/CAVALLI GROUP.png" alt="project1" class="rounded-lg">
+                </div>
+
+                <div class="lg:w-1/3 xl:w-1/4 p-4
+                hover:shadow-lg hover:shadow-primarycolor transition duration-300">
+                    <img src="./img/CAVALLI GROUP.png" alt="project1" class="rounded-lg">
+                </div>
+
+                <div class="lg:w-1/3 xl:w-1/4 p-4
+                hover:shadow-lg hover:shadow-primarycolor transition duration-300">
+                    <img src="./img/CAVALLI GROUP.png" alt="project1" class="rounded-lg">
+                </div>
+
+                <div class="lg:w-1/3 xl:w-1/4 p-4
+                hover:shadow-lg hover:shadow-primarycolor transition duration-300">
+                    <img src="./img/CAVALLI GROUP.png" alt="project1" class="rounded-lg">
+                </div>
+
+                <div class="lg:w-1/3 xl:w-1/4 p-4
+                hover:shadow-lg hover:shadow-primarycolor transition duration-300">
+                    <img src="./img/CAVALLI GROUP.png" alt="project1" class="rounded-lg">
+                </div>
+
+                <div class="lg:w-1/3 xl:w-1/4 p-4
+                hover:shadow-lg hover:shadow-primarycolor transition duration-300">
+                    <img src="./img/CAVALLI GROUP.png" alt="project1" class="rounded-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- My Portfolio -->
+
+    <!-- Contact me -->
+    <div class="bg-secondarycolor py-20" id="contactsection">
+        <div class="container mx-auto p-4">
+            <h2 class="text-3xl font-bold text-center text-textcolor">Get in Touch</h>
+                <p class="text-lg text-center">Have a project in mind? Let's talk!</p>
+                <div class="flex justify-center">
+                    <a href="tel:+2348100275274" class="bg-primarycolor hover:bg-secondarycolor text-white font-bold py-4 px-8 mt-4 text-xl rounded-full transition duration-300">Contact Me<a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- Contact me -->
+
+    <!-- Footer -->
+    <div class="bg-primarycolor py-10">
+        <div class="container mx-auto p-4 text-textcolor">
+            <p class="text-lg text-center text-white">Copyright 2022 - All Rights Reserved </p>
+        </div>
+    </div>
+    <!-- Footer -->
 
 
 

@@ -2,7 +2,22 @@
 module.exports = {
   content: ["./*.html"],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        fadeIn: 'fadeIn 2s ease-in-out',
+        slideIn: 'slideIn 1s ease-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+        slideIn: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+      },
+    },
     colors: {
       "primarycolor": "#ED4137",
       "secondarycolor": "#090619",
